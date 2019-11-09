@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190301 20:59:22.862" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Projetos\SuiteSiteTeste\SuiteSiteTeste\tests\TestPratice.Robot" id="s1" name="TestPratice">
+<test id="s1-t1" name="Caso de teste 1">
+<kw type="setup" name="Abrir navegador" library="Resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190301 20:59:23.172" level="INFO">Opening browser 'chrome' to base url 'https://integrees.net'.</msg>
+<status status="PASS" endtime="20190301 20:59:27.039" starttime="20190301 20:59:23.172"></status>
+</kw>
+<status status="PASS" endtime="20190301 20:59:27.039" starttime="20190301 20:59:23.171"></status>
+</kw>
+<kw name="Pesquisa &quot;DB1007027&quot; no campo" library="Resource">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>${VAR}</arg>
+</arguments>
+<msg timestamp="20190301 20:59:27.042" level="INFO">Typing text 'DB1007027' into text field 'name=username'.</msg>
+<status status="PASS" endtime="20190301 20:59:27.225" starttime="20190301 20:59:27.041"></status>
+</kw>
+<status status="PASS" endtime="20190301 20:59:27.226" starttime="20190301 20:59:27.040"></status>
+</kw>
+<kw name="Pesquisa &quot;Brasil@2025&quot; no campo2" library="Resource">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${PAR}</arg>
+</arguments>
+<msg timestamp="20190301 20:59:27.227" level="INFO">Typing text 'Brasil@2025' into text field 'name=password'.</msg>
+<status status="PASS" endtime="20190301 20:59:27.392" starttime="20190301 20:59:27.227"></status>
+</kw>
+<status status="PASS" endtime="20190301 20:59:27.392" starttime="20190301 20:59:27.226"></status>
+</kw>
+<kw name="Clicar pesquisar" library="Resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(), "Login")]</arg>
+</arguments>
+<msg timestamp="20190301 20:59:27.393" level="INFO">Clicking button 'xpath=//*[contains(text(), "Login")]'.</msg>
+<status status="PASS" endtime="20190301 20:59:31.463" starttime="20190301 20:59:27.393"></status>
+</kw>
+<status status="PASS" endtime="20190301 20:59:31.463" starttime="20190301 20:59:27.393"></status>
+</kw>
+<status status="PASS" endtime="20190301 20:59:31.464" critical="yes" starttime="20190301 20:59:23.167"></status>
+</test>
+<status status="PASS" endtime="20190301 20:59:31.466" starttime="20190301 20:59:22.864"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestPratice" pass="1">TestPratice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
